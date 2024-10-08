@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Menu from "./Menu";
 import Footer from "./Footer";
 import Login from "./Login";
+import Register from "./Register";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Menu />
       <Footer />
       <Login />
+      <Register />
     </View>
   );
 };

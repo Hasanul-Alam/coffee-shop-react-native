@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import { TextInput } from "react-native-gesture-handler";
+import { Link } from "expo-router";
 
 const DividerText = styled(Text);
 const Divider = styled(View);
@@ -48,27 +49,42 @@ const Login = () => {
         <Divider className="flex-1 h-0.5 bg-gray-400" />
       </Divider>
 
-      {/* Input Fields */}
+      {/* Login Form */}
       {/* Email Field */}
       <View>
         <Text className="text-lg mb-1">Username or Email</Text>
         <TextInput
           className="border border-1 px-2 py-2 rounded-lg"
           placeholder="Username or Email"
+          keyboardType="email-address"
+          autoCapitalize="none"
         />
       </View>
       {/* Password Field */}
       <View className="my-1">
-      <Text className="text-lg mb-1">Password</Text>
+        <Text className="text-lg mb-1">Password</Text>
         <TextInput
           className="border border-1 px-2 py-2 rounded-lg"
           placeholder="Password"
           secureTextEntry={true}
+          autoCapitalize="none"
         />
       </View>
+
+      {/* Login Button */}
       <View className="mt-5">
-        <Text className="w-full bg-[#71db40] text-center text-slate-600 text-xl py-2 rounded-lg font-semibold">Login</Text>
+        <Text className="w-full bg-[#71db40] text-center text-slate-600 text-xl py-2 rounded-lg font-semibold">
+          Login
+        </Text>
       </View>
+
+      {/* Sign Up Link */}
+      <Text className="my-2 text-center">
+        Don't have an account?{" "}
+        <Link href={'https://github.com/Hasanul-Alam'}>
+          <Text className="text-blue-600">Sign Up</Text>
+        </Link>
+      </Text>
     </View>
   );
 };
