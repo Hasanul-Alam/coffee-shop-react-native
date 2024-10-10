@@ -3,18 +3,15 @@ import React from "react";
 import Banner from "./Banner";
 import Menu from "./Menu";
 import Footer from "./Footer";
-import Login from "./Login";
-import Register from "./Register";
+import { ScrollView } from "react-native-gesture-handler";
 
 const Home = () => {
   return (
-    <View className="">
+    <ScrollView className="">
       <Banner />
       <Menu />
       <Footer />
-      <Login />
-      <Register />
-    </View>
+    </ScrollView>
   );
 };
 

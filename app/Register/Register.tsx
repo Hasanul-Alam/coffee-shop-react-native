@@ -9,7 +9,7 @@ const Divider = styled(View);
 
 const Register = () => {
   return (
-    <View className="w-[90%] mx-auto py-10">
+    <View className="w-[90%] mx-auto py-10 flex-1 justify-center">
       {/* Google Sign Up */}
       <View className="flex-row items-center justify-center bg-[#3b6fd1] py-3 rounded-xl">
         <View className="w-[30px] bg-white rounded-full">
