@@ -1,9 +1,8 @@
-import { Button, Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Entypo, FontAwesome6 } from "@expo/vector-icons";
 import { Link, useNavigation } from "expo-router";
-import { DrawerNavigationProp } from '@react-navigation/drawer';
-import Cart from "../cart";
+import { DrawerNavigationProp } from "@react-navigation/drawer";
 
 type DrawerNavigation = DrawerNavigationProp<any>;
 
@@ -26,7 +25,9 @@ const Banner = () => {
             />
           </View>
           <View className="flex-row items-center gap-4">
-            <Link href={'/cart'}><Entypo name="shopping-cart" size={25} /></Link>
+            <Link href="/cart">
+              <Entypo name="shopping-cart" size={25} />
+            </Link>
             <FontAwesome6 name="discord" size={22} />
           </View>
         </View>

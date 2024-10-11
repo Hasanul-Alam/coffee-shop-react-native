@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
@@ -7,9 +7,8 @@ import IndexScreen from "./index";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import {
-    Feather,
+  Feather,
   FontAwesome,
-  Ionicons,
   MaterialCommunityIcons,
   MaterialIcons,
 } from "@expo/vector-icons";
@@ -66,7 +65,7 @@ const DrawerLayout = () => {
             name="Cart"
             component={Cart}
             options={{
-              title: "",
+              title: "Cart",
               drawerLabel: "Cart",
               drawerLabelStyle: { color: "black", fontSize: 20 },
               drawerIcon: () => (
